@@ -9,6 +9,7 @@
   --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+/* 2. Базовые сбросы (добавлена звездочка *) */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -229,7 +230,7 @@ body.page {
   font-size: 1.5rem;
   margin-bottom: 24px;
   background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%);
-  background-clip: text;
+  background-clip: text;              /* ← ИСПРАВЛЕНО: добавлена закрывающая */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

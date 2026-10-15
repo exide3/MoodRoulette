@@ -111,7 +111,7 @@ const generatePinterestWidget = (boardUrl) => {
 
   pinterestWidget.appendChild(widgetLink);
 
-  // Надёжная система повторных попыток загрузки виджета
+  // Надёжная система повторных попыток (Retry)
   let attempts = 0;
   const maxAttempts = 10;
 
@@ -124,12 +124,11 @@ const generatePinterestWidget = (boardUrl) => {
       console.log('⏳ Waiting for PinUtils... attempt', attempts);
       setTimeout(tryLoadPinterest, 500);
     } else {
-      console.error('❌ Pinterest PinUtils failed to load. Check if URL is a REAL BOARD, not a search page.');
+      console.error('❌ Pinterest PinUtils failed to load. Check if URL is a REAL BOARD.');
       pinterestWidget.innerHTML = `
-        <p style="color: #ff0055; text-align: center;">
+        <p style="color: #ff0055; text-align: center; padding: 20px;">
           Widget failed to load.<br>
-          Make sure the URL is a real board (e.g., pinterest.com/username/boardname/),<br>
-          not a search page.
+          Make sure the URL is a real board (e.g., pinterest.com/username/boardname/).
         </p>
       `;
     }

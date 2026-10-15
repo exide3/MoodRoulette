@@ -58,50 +58,47 @@ export const characterSteps = [
         name: 'Sci-Fi Cyberfuturism',
         color: '#00f3ff',
         tags: 'cyberpunk,scifi,futuristic',
+        pinterestBoard: 'https://www.pinterest.com/steamexide/scificyberfuturism/'
+      },
+      {
+        name: 'Dark Circus',
+        color: '#ff0055',
+        tags: 'darkcircus,theater,vintage',
         // ⚠️ ЗАМЕНИ НА ССЫЛКУ НА СВОЮ РЕАЛЬНУЮ ДОСКУ (не search!)
-                pinterestBoard: 'https://www.pinterest.com/steamexide/scificyberfuturism/'
-            },
-            {
-                name: 'Dark Circus',
-                color: '#ff0055',
-                tags: 'darkcircus,theater,vintage',
-                pinterestQuery: 'dark+circus+aesthetic',
-                pinterestBoard: 'https://www.pinterest.com/steamexide/artscharacter-design/'
-            },
-            {
-                name: 'Ethereal Forest',
-                color: '#00ff88',
-                tags: 'magicforest,mist,fantasy',
-                pinterestQuery: 'ethereal+forest+fantasy',
-                pinterestBoard: 'https://www.pinterest.com/steamexide/wild-west/'
-            },
-            {
-                name: 'Space Noir',
-                color: '#7b2cbf',
-                tags: 'spacenoir,scifi,stars',
-                pinterestQuery: 'space+noir+scifi',
-                pinterestBoard: 'https://www.pinterest.com/steamexide/space-noir/'
-            }
-        ]
-    },
-    {
-        id: 'eyes',
-        title: 'Eye Color',
-        options: [
-            { name: 'Neon Blue', color: '#00f3ff', desc: 'Glowing like a hologram' },
-            { name: 'Blood Red', color: '#ff0000', desc: 'Intense and predatory' },
-            { name: 'Heterochromia', color: '#ff00ff', desc: 'One gold, one silver' },
-            { name: 'Void Black', color: '#1a1a1a', desc: 'No sclera, pure darkness' }
-        ]
-    },
-    {
-        id: 'item',
-        title: 'Key Accessory',
-        options: [
-            { name: 'Neural Jack', color: '#00f3ff', desc: 'Port at the base of the skull' },
-            { name: 'Venetian Mask', color: '#ff0055', desc: 'Gold leaf and cracked porcelain' },
-            { name: 'Glowing Amulet', color: '#00ff88', desc: 'Pulses with ancient magic' },
-            { name: 'Rusty Monocle', color: '#ff9d00', desc: 'With a built-in scanner' }
-        ]
-    }
+        pinterestBoard: 'https://www.pinterest.com/steamexide/dark-circus/'
+      },
+      {
+        name: 'Ethereal Forest',
+        color: '#00ff88',
+        tags: 'magicforest,mist,fantasy',
+        pinterestBoard: 'https://www.pinterest.com/steamexide/ethereal-forest/'
+      },
+      {
+        name: 'Space Noir',
+        color: '#7b2cbf',
+        tags: 'spacenoir,scifi,stars',
+        pinterestBoard: 'https://www.pinterest.com/steamexide/space-noir/'
+      }
+    ]
+  },
+  {
+    id: 'eyes',
+    title: 'Eye Color',
+    options: [
+      { name: 'Neon Blue', color: '#00f3ff', desc: 'Glowing like a hologram' },
+      { name: 'Blood Red', color: '#ff0000', desc: 'Intense and predatory' },
+      { name: 'Heterochromia', color: '#ff00ff', desc: 'One gold, one silver' },
+      { name: 'Void Black', color: '#1a1a1a', desc: 'No sclera, pure darkness' }
+    ]
+  },
+  {
+    id: 'item',
+    title: 'Key Accessory',
+    options: [
+      { name: 'Neural Jack', color: '#00f3ff', desc: 'Port at the base of the skull' },
+      { name: 'Venetian Mask', color: '#ff0055', desc: 'Gold leaf and cracked porcelain' },
+      { name: 'Glowing Amulet', color: '#00ff88', desc: 'Pulses with ancient magic' },
+      { name: 'Rusty Monocle', color: '#ff9d00', desc: 'With a built-in scanner' }
+    ]
+  }
 ];
