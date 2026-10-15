@@ -49,38 +49,39 @@ export const aestheticsDB = [
         pinterestQuery: "space+noir+scifi"
     }
 ];
+
 export const characterSteps = [
     {
         id: 'vibe',
         title: 'General Aesthetic',
         options: [
-            { 
-                name: 'Sci-Fi Cyberfuturism', 
-                color: '#00f3ff', 
-                tags: 'cyberpunk,scifi,futuristic', 
-                pinterest: 'scificyberfuturism',
-                pinterestBoard: 'https://ru.pinterest.com/steamexide/scificyberfuturism/' 
+            {
+                name: 'Sci-Fi Cyberfuturism',
+                color: '#00f3ff',
+                tags: 'cyberpunk,scifi,futuristic',
+                pinterestQuery: 'scificyberfuturism',
+                pinterestBoard: 'https://www.pinterest.com/steamexide/scificyberfuturism/'
             },
-            { 
-                name: 'Dark Circus', 
-                color: '#ff0055', 
-                tags: 'darkcircus,theater,vintage', 
-                pinterest: 'dark+circus+aesthetic',
-                pinterestBoard: 'https://www.pinterest.com/search/pins/?q=dark+circus+aesthetic' 
+            {
+                name: 'Dark Circus',
+                color: '#ff0055',
+                tags: 'darkcircus,theater,vintage',
+                pinterestQuery: 'dark+circus+aesthetic',
+                pinterestBoard: 'https://www.pinterest.com/steamexide/artscharacter-design/'
             },
-            { 
-                name: 'Ethereal Forest', 
-                color: '#00ff88', 
-                tags: 'magicforest,mist,fantasy', 
-                pinterest: 'ethereal+forest+fantasy',
-                pinterestBoard: 'https://www.pinterest.com/search/pins/?q=ethereal+forest+fantasy' 
+            {
+                name: 'Ethereal Forest',
+                color: '#00ff88',
+                tags: 'magicforest,mist,fantasy',
+                pinterestQuery: 'ethereal+forest+fantasy',
+                pinterestBoard: 'https://www.pinterest.com/steamexide/wild-west/'
             },
-            { 
-                name: 'Space Noir', 
-                color: '#7b2cbf', 
-                tags: 'spacenoir,scifi,stars', 
-                pinterest: 'space+noir+scifi',
-                pinterestBoard: 'https://www.pinterest.com/search/pins/?q=space+noir+scifi' 
+            {
+                name: 'Space Noir',
+                color: '#7b2cbf',
+                tags: 'spacenoir,scifi,stars',
+                pinterestQuery: 'space+noir+scifi',
+                pinterestBoard: 'https://www.pinterest.com/steamexide/space-noir/'
             }
         ]
     },
