@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodBoard | Character Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+    
+    <div class="page__bg-blob page__bg-blob--purple"></div>
+    <div class="page__bg-blob page__bg-blob--blue"></div>
+
+    <main class="main">
+        <header class="header">
+            <h1 class="header__title">Mood<span class="header__title-accent">Board</span></h1>
+            <p class="header__subtitle">Build your unique reference.</p>
+        </header>
+
+        <section class="glass-card">
+            
+            <!-- ИНДИКАТОР ПРОГРЕССА -->
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress-bar__step active">1</div>
+                <div class="progress-bar__line"></div>
+                <div class="progress-bar__step">2</div>
+                <div class="progress-bar__line"></div>
+                <div class="progress-bar__step">3</div>
+            </div>
+
+            <!-- ЗОНА ШАГА -->
+            <div class="step-container" id="step-container">
+                <h2 class="step-container__title" id="step-title">General Aesthetic</h2>
+                
+                <div class="step-container__result" id="step-result">
+                    <span class="step-container__result-text">Ready to spin?</span>
+                </div>
+
+                <div class="controls">
+                    <button class="btn btn--primary" id="spin-btn">
+                        <span class="btn__text">Spin</span>
+                    </button>
+                    <button class="btn btn--ghost" id="next-btn" style="display: none;">
+                        <span class="btn__text">Lock & Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ЗОНА ИТОГА -->
+            <div class="summary-container" id="summary-container" style="display: none;">
+                <h2 class="summary-container__title">Character Ready!</h2>
+                <div class="summary-tags" id="summary-tags"></div>
+                
+                <div class="mood-section" id="mood-section">
+                    <div class="mood-header">
+                        <h3 class="mood-header__title">Pinterest Board</h3>
+                        <a href="#" target="_blank" class="btn btn--ghost" id="pinterest-link">
+                            <span class="btn__text">Open full board</span>
+                        </a>
+                    </div>
+                    <!-- Контейнер для виджета Pinterest -->
+                    <div class="pinterest-widget-container" id="pinterest-widget">
+                        <!-- Сюда JS вставит виджет -->
+                    </div>
+                </div>
+
+                <button class="btn btn--ghost" id="restart-btn" style="margin-top: 20px;">
+                    <span class="btn__text">Start Over</span>
+                </button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Скрипт Pinterest (подключается ОДИН РАЗ на странице) -->
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
