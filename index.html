@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoodBoard | Character Generator</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Pinterest скрипт — ОДИН РАЗ на странице -->
+    <!-- Скрипт Pinterest: ОДИН раз, async defer, с https -->
     <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
 </head>
 <body class="page">
@@ -19,7 +19,6 @@
         </header>
 
         <div class="glass-card">
-            <!-- Прогресс-бар -->
             <div class="progress-bar">
                 <div class="progress-bar__step active">1</div>
                 <div class="progress-bar__line"></div>
@@ -28,7 +27,6 @@
                 <div class="progress-bar__step">3</div>
             </div>
 
-            <!-- Контейнер шагов -->
             <div class="step-container" id="step-container">
                 <h2 class="step-container__title" id="step-title">General Aesthetic</h2>
                 <div class="step-container__result">
@@ -42,7 +40,6 @@
                 </div>
             </div>
 
-            <!-- Итоговая сводка -->
             <div class="summary-container" id="summary-container" style="display:none;">
                 <h2 class="summary-container__title">Character Ready!</h2>
                 <div class="summary-tags" id="summary-tags"></div>
